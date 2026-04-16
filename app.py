@@ -87,7 +87,7 @@ if st.button("Predict Fraud"):
 st.markdown("---")
 st.markdown(
     "Built with **Python, Scikit-learn, Pandas, and Streamlit**"
+)
 
 st.markdown("---")
 st.markdown("Built by Betel | Machine Learning Project 🚀")
-)
