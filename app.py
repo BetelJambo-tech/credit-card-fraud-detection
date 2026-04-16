@@ -27,8 +27,13 @@ model = joblib.load("src/fraud_model.pkl")
 st.title("💳 Credit Card Fraud Detection")
 st.caption("Predict whether a transaction is fraudulent using a machine learning model.")
 st.info("Enter transaction feature values below, then click Predict.")
+st.write("Use the sample values button for a quick demo, or enter custom values and click Predict Fraud.")
 
 st.markdown("---")
+st.sidebar.markdown("### Model Performance")
+st.sidebar.write("Accuracy: 99%+")
+st.sidebar.write("Fraud Recall: 76%")
+st.sidebar.write("Fraud Precision: 96%")
 st.subheader("📊 Enter Transaction Details")
 
 # Features
@@ -82,12 +87,10 @@ if st.button("Predict Fraud"):
     st.write(f"**Fraud Probability:** {probability:.4f}")
 
     st.progress(min(float(probability), 1.0))
+    st.markdown("### About the Model")
+st.write("This app uses a Random Forest classifier trained on anonymized credit card transaction data to predict whether a transaction is fraudulent.")
 
 # Footer
 st.markdown("---")
-st.markdown(
-    "Built with **Python, Scikit-learn, Pandas, and Streamlit**"
-)
-
-st.markdown("---")
-st.markdown("Built by Betel | Machine Learning Project 🚀")
+st.caption("Built with Python, Scikit-learn, Pandas, and Streamlit")
+st.caption("Built by Betel | Machine Learning Project")
