@@ -27,6 +27,6 @@ if st.button("Predict"):
     prediction = model.predict(input_df)[0]
 
     if prediction == 1:
-    st.error("⚠️ Fraudulent Transaction Detected")
-else:
-    st.success("✅ Legitimate Transaction")
+        st.error("⚠️ Fraudulent Transaction Detected")
+    else:
+        st.success("✅ Legitimate Transaction")
