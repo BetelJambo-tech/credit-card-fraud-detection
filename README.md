@@ -22,10 +22,10 @@ https://credit-card-fraud-detection-ujiaxw6xcq63fqskmvlfxk.streamlit.app/
 ## 📷 Screenshots
 
 ### Main App
-![Main App](fraud-home.png)
+![Main App](fraud-home.jpeg)
 
 ### Prediction Result
-![Prediction Result](fraud-result.png)
+![Prediction Result](fraud-result.jpeg)
 
 ## 💡 How It Works
 1. User enters transaction feature values
